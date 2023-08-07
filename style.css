@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(197, 126, 126);
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+#header{
+    z-index: 1;
+    text-align: center;
+    color: rgb(0, 255, 85);
+}
+
+h4{
+    padding: 20px 0;
+}
+
+.player{
+    position: fixed;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(148, 148, 138), rgb(230, 121, 202));
+    top: 0;
+    min-width: 400px;
+    z-index: 1;
+}
+
+.img__music{
+    width: 200px;
+    margin: 15px auto;
+}
+
+.img__music .bgr__music{
+    background: url('/img/st1.jpg');
+    background-size: cover;
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.control{
+    width: 95%;
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.control .btn{
+    padding: 18px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.control .random{
+    color: rgb(197, 40, 40);
+}
+
+.control .repeat{
+    color: rgb(197, 40, 40);
+}
+
+.control .btn:hover i{
+    opacity: 0.4;
+}
+
+.btn__play{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(196, 196, 58);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.player .icon-pause{
+    display: none;
+}
+
+.player .icon-play{
+    display: inline-block;
+}
+
+.playing .icon-play{
+    display: none;
+}
+
+.playing .icon-pause{
+    display: inline-block;
+}
+
+.music__volume{
+    width: 90%;
+    z-index: 1;
+}
+
+.music__volume .sound
+{
+    margin-left: 20px;
+    color: rgb(186, 245, 68);
+    font-size: 20px;
+}
+
+.music__time{
+    width: 90%;
+    margin: 10px auto;
+    z-index: 1;
+}
+
+.time__length{
+    width: 100%;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.play__List{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(238, 225, 225);
+    top: 490px;
+    z-index: -1;
+}
+
+.play__List:hover .list__music{
+    cursor: pointer;
+}
+
+.play__List .active{
+    color: rgb(240, 231, 231);
+    background-color: rgb(231, 55, 143);
+}
+
+.play__List .active i{
+    color: black;
+}
+
+.list__music{
+    display: flex;
+    width: 390px;
+    height: 95px;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: rgb(194, 162, 180);
+    margin: 5px auto;
+}
+
+.img__playList{
+    width: 66px;
+    height: 66px;
+    margin: 12px 0;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.list__name{
+    padding: 10px 0;
+    line-height: 35px;
+}
+
+.sd{
+    cursor: pointer;
+}
+
+.btn__list{
+    line-height: 95px;
+}

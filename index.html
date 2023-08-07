@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<body>
+    <div class="container">
+        <div class="player">
+            <!-- tilte -->
+            <div id="header">
+                <h4>Now Playing</h4>
+                <h2>Chạy Ngay Đi</h2>
+            </div>
+            <!-- img -->
+            <div class="img__music">
+                <div class="bgr__music">
+                </div>
+            </div>
+            <!-- control -->
+            <div class="control">
+                <div class="btn btn_repeat"> <i class="ti-control-record"> </i>
+                </div>
+                <div class="btn btn_prev"> <i class="ti-control-backward"> </i>
+                </div>
+                <div class="btn btn__play"> 
+                    <i class="icon-play ti-control-play"></i>
+                    <i class="icon-pause ti-control-pause"></i>
+                </div>
+                <div class="btn btn_next"> <i class="ti-control-forward"> </i>
+                </div>
+                <div class="btn btn_random"> <i class="ti-control-shuffle"> </i>
+                </div>
+            </div>
+            <!-- volume -->
+            <div class="music__volume">
+                <div class="sound"> 
+                    <i class="ti-volume"> </i>
+                    <input class="sd volumn" type="range" value="30" step="1" min="0" max="100">
+                    <audio id="audio" src=""></audio>
+                </div>
+            </div>
+            <!-- time -->
+            <div class="music__time">
+                <input id="progress" class="sd time__length" type="range" value="0" step="1" min="0" max="100">
+                <div class="time">
+                    <div class="timeStart">0:00</div>
+                    <div class="timeEnd">3:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="play__List">
+            
+        </div>
+    </div>
+</body>
+<script src="main.js">
+</script>
+</html>
