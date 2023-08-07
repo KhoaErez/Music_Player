@@ -57,7 +57,24 @@ const app = {
             singer: 'MCK',
             path: './music/TaiViSao-MCK-7963973.mp3',
             image: './img/MCK.jpg'
-        }
+        },
+        {
+            name: 'À Lôi',
+            singer: 'Double2T',
+            path: './music/ALoi-Double2TMasew-10119691.mp3',
+            image: './img/Double2T.jpg'
+        },        {
+            name: 'Nấu Ăn Cho Em',
+            singer: 'Đen Vâu',
+            path: './music/NauAnChoEm-Den-9466587.mp3',
+            image: './img/den.jpg'
+        }, 
+        {
+            name: 'Suýt nữa thì',
+            singer: 'Andiez',
+            path: './music/Suytnuathi.mp3',
+            image: './img/andiez.jpg'
+        },
     ],
     render: function(){
         const htmls = this.songs.map((song, index) =>{
