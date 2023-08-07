@@ -55,8 +55,8 @@ const app = {
         {
             name: 'Tại Vì Sao',
             singer: 'MCK',
-            path: 'music/TaiViSao-MCK-7963973.mp3',
-            image: 'https://kenh14cdn.com/thumb_w/660/203336854389633024/2021/1/9/mck-16101311436801014057430.png'
+            path: './music/TaiViSao-MCK-7963973.mp3',
+            image: './img/MCK.jpg'
         }
     ],
     render: function(){
