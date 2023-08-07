@@ -180,11 +180,14 @@ h4{
     width: 66px;
     height: 66px;
     margin: 12px 0;
+    margin-left: 16px;
+    margin-right: 40px;
     border-radius: 50%;
     background-size: cover;
 }
 
 .list__name{
+    flex-grow: 2;
     padding: 10px 0;
     line-height: 35px;
 }
@@ -194,6 +197,7 @@ h4{
 }
 
 .btn__list{
+    margin: 12px 16px;
     line-height: 95px;
 }
 
